@@ -1,0 +1,146 @@
+\contentsline {section}{\numberline {1}UI Module}{v}{section.1}
+\contentsline {subsection}{\numberline {1.1}Module}{v}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Uses}{v}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Syntax}{v}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Exported Access Programs}{v}{subsubsection.1.3.1}
+\contentsline {subsection}{\numberline {1.4}Semantics}{v}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}State Variables}{v}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}State Invariant}{vi}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Access Routine Semantics}{vi}{subsubsection.1.4.3}
+\contentsline {section}{\numberline {2}Sprite Animation Module}{viii}{section.2}
+\contentsline {subsection}{\numberline {2.1}Template Module}{viii}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Uses}{viii}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Syntax}{viii}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Exported Constants}{viii}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Exported Types}{viii}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Exported Access Programs}{viii}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Semantics}{viii}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}State Variables}{viii}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}State Invariant}{ix}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Assumptions}{ix}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Access Routine Semantics}{ix}{subsubsection.2.4.4}
+\contentsline {section}{\numberline {3}Character Module}{xi}{section.3}
+\contentsline {subsection}{\numberline {3.1}Template Module}{xi}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Uses}{xi}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Syntax}{xi}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Exported Constants}{xi}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Exported Types}{xi}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Exported Access Programs}{xi}{subsubsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}Semantics}{xi}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}State Variables}{xi}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}State Invariant}{xi}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Assumptions}{xi}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Access Routine Semantics}{xii}{subsubsection.3.4.4}
+\contentsline {section}{\numberline {4}Animation Module}{xiii}{section.4}
+\contentsline {subsection}{\numberline {4.1}Template Module}{xiii}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Uses}{xiii}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Syntax}{xiii}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Exported Types}{xiii}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Exported Access Programs}{xiii}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Semantics}{xiii}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}State Variables}{xiii}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}State Invariant}{xiii}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Assumptions}{xiii}{subsubsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4}Access Routine Semantics}{xiv}{subsubsection.4.4.4}
+\contentsline {section}{\numberline {5}DinoDodger Module}{xv}{section.5}
+\contentsline {subsection}{\numberline {5.1}Template Module}{xv}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Uses}{xv}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Syntax}{xv}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Exported Types}{xv}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Exported Access Programs}{xv}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}Semantics}{xv}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}State Variables}{xv}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}State Invariant}{xv}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Assumptions}{xv}{subsubsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.4}Access Routine Semantics}{i}{subsubsection.5.4.4}
+\contentsline {section}{\numberline {6}UI Module}{ii}{section.6}
+\contentsline {subsection}{\numberline {6.1}Module}{ii}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Uses}{ii}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Syntax}{ii}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Exported Access Programs}{ii}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}Semantics}{ii}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}State Variables}{ii}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}State Invariant}{iii}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Access Routine Semantics}{iii}{subsubsection.6.4.3}
+\contentsline {section}{\numberline {7}Sprite Animation Module}{v}{section.7}
+\contentsline {subsection}{\numberline {7.1}Template Module}{v}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Uses}{v}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Syntax}{v}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Exported Constants}{v}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Exported Types}{v}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Exported Access Programs}{v}{subsubsection.7.3.3}
+\contentsline {subsection}{\numberline {7.4}Semantics}{v}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}State Variables}{v}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}State Invariant}{vi}{subsubsection.7.4.2}
+\contentsline {subsubsection}{\numberline {7.4.3}Assumptions}{vi}{subsubsection.7.4.3}
+\contentsline {subsubsection}{\numberline {7.4.4}Access Routine Semantics}{vi}{subsubsection.7.4.4}
+\contentsline {section}{\numberline {8}Character Module}{viii}{section.8}
+\contentsline {subsection}{\numberline {8.1}Template Module}{viii}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Uses}{viii}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Syntax}{viii}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Exported Constants}{viii}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Exported Types}{viii}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3}Exported Access Programs}{viii}{subsubsection.8.3.3}
+\contentsline {subsection}{\numberline {8.4}Semantics}{viii}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}State Variables}{viii}{subsubsection.8.4.1}
+\contentsline {subsubsection}{\numberline {8.4.2}State Invariant}{viii}{subsubsection.8.4.2}
+\contentsline {subsubsection}{\numberline {8.4.3}Assumptions}{viii}{subsubsection.8.4.3}
+\contentsline {subsubsection}{\numberline {8.4.4}Access Routine Semantics}{ix}{subsubsection.8.4.4}
+\contentsline {section}{\numberline {9}Animation Module}{x}{section.9}
+\contentsline {subsection}{\numberline {9.1}Template Module}{x}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Uses}{x}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Syntax}{x}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Exported Types}{x}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Exported Access Programs}{x}{subsubsection.9.3.2}
+\contentsline {subsection}{\numberline {9.4}Semantics}{x}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}State Variables}{x}{subsubsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.2}State Invariant}{x}{subsubsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3}Assumptions}{x}{subsubsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.4}Access Routine Semantics}{xi}{subsubsection.9.4.4}
+\contentsline {section}{\numberline {10}DinoDodger Module}{xii}{section.10}
+\contentsline {subsection}{\numberline {10.1}Template Module}{xii}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Uses}{xii}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Syntax}{xii}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {10.3.1}Exported Types}{xii}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}Exported Access Programs}{xii}{subsubsection.10.3.2}
+\contentsline {subsection}{\numberline {10.4}Semantics}{xii}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}State Variables}{xii}{subsubsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.2}State Invariant}{xii}{subsubsection.10.4.2}
+\contentsline {subsubsection}{\numberline {10.4.3}Assumptions}{xii}{subsubsection.10.4.3}
+\contentsline {subsubsection}{\numberline {10.4.4}Access Routine Semantics}{xiii}{subsubsection.10.4.4}
+\contentsline {section}{\numberline {11}Cactus Module}{xiv}{section.11}
+\contentsline {subsection}{\numberline {11.1}Template Module}{xiv}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Uses}{xiv}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Syntax}{xiv}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Exported Constants}{xiv}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Exported Types}{xiv}{subsubsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.3}Exported Access Programs}{xiv}{subsubsection.11.3.3}
+\contentsline {subsection}{\numberline {11.4}Semantics}{xiv}{subsection.11.4}
+\contentsline {subsubsection}{\numberline {11.4.1}State Variables}{xiv}{subsubsection.11.4.1}
+\contentsline {subsubsection}{\numberline {11.4.2}State Invariant}{xiv}{subsubsection.11.4.2}
+\contentsline {subsubsection}{\numberline {11.4.3}Assumptions}{xiv}{subsubsection.11.4.3}
+\contentsline {subsubsection}{\numberline {11.4.4}Access Routine Semantics}{xv}{subsubsection.11.4.4}
+\contentsline {section}{\numberline {12}Pteradactyl Module}{xvi}{section.12}
+\contentsline {subsection}{\numberline {12.1}Template Module}{xvi}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Uses}{xvi}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Syntax}{xvi}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {12.3.1}Exported Constants}{xvi}{subsubsection.12.3.1}
+\contentsline {subsubsection}{\numberline {12.3.2}Exported Types}{xvi}{subsubsection.12.3.2}
+\contentsline {subsubsection}{\numberline {12.3.3}Exported Access Programs}{xvi}{subsubsection.12.3.3}
+\contentsline {subsection}{\numberline {12.4}Semantics}{xvi}{subsection.12.4}
+\contentsline {subsubsection}{\numberline {12.4.1}State Variables}{xvi}{subsubsection.12.4.1}
+\contentsline {subsubsection}{\numberline {12.4.2}State Invariant}{xvi}{subsubsection.12.4.2}
+\contentsline {subsubsection}{\numberline {12.4.3}Assumptions}{xvi}{subsubsection.12.4.3}
+\contentsline {subsubsection}{\numberline {12.4.4}Access Routine Semantics}{xvii}{subsubsection.12.4.4}
+\contentsline {section}{\numberline {13}PointCounter Module}{xviii}{section.13}
+\contentsline {subsection}{\numberline {13.1}Template Module}{xviii}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Uses}{xviii}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Syntax}{xviii}{subsection.13.3}
+\contentsline {subsubsection}{\numberline {13.3.1}Exported Constants}{xviii}{subsubsection.13.3.1}
+\contentsline {subsubsection}{\numberline {13.3.2}Exported Types}{xviii}{subsubsection.13.3.2}
+\contentsline {subsubsection}{\numberline {13.3.3}Exported Access Programs}{xviii}{subsubsection.13.3.3}
+\contentsline {subsection}{\numberline {13.4}Semantics}{xviii}{subsection.13.4}
+\contentsline {subsubsection}{\numberline {13.4.1}State Variables}{xviii}{subsubsection.13.4.1}
+\contentsline {subsubsection}{\numberline {13.4.2}State Invariant}{xviii}{subsubsection.13.4.2}
+\contentsline {subsubsection}{\numberline {13.4.3}Assumptions}{xix}{subsubsection.13.4.3}
+\contentsline {subsubsection}{\numberline {13.4.4}Access Routine Semantics}{xix}{subsubsection.13.4.4}

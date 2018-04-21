@@ -1,0 +1,320 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\title{SE 3XA3: Test Report\\DinoDodger}
+
+\author{Team 39, S.R.A Squad
+		\\ Shrey Mittal, mittas1
+		\\ Razan Abujarad, abujarar
+		\\ Zhiwen Yang, yangz18
+}
+
+\date{6 December, 2017}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\newpage
+\begin{table}
+\caption{\bf Revision History}
+\begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
+\toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
+\midrule
+\date{2017/11/20} & 1.0 & Creating Test Report\\
+\date{2017/12/05} & 1.1 & rev1\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\pagenumbering{arabic}
+
+\section{Functional Requirements Evaluation}
+\subsection{Jump Test 1 (JT-01)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{JT-01} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Pressed Spacebar & Character Transitions from  y = 300 to y=150 and back to y=300 &  pass\\
+\midrule
+2 & Pressed and held Spacebar & Character repeatedly transitions along y from 300, to 150 and back & pass\\
+ \hline
+\end{tabular}
+
+\subsection{Jump Test 2 (JT-02)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{JT-02} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Pressed Spacebar & Character jumps over incoming cactus &  pass\\
+\midrule
+2 & Pressed Spacebar & Character jumps over incoming low-altitude pteradactyl & pass\\
+ \hline
+\end{tabular}
+
+\subsection{Obstacle Collision Test 1 (OCT-01))}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{OCT-01} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Pressed Spacebar earlier than optimal time & Character collides with Cactus when descending and Gameplay ends &  pass\\
+\midrule
+2 & Pressed Spacebar earlier than optimal time & Character collides with low-altitude pteradactyl when descending and Gameplay ends & pass\\
+\midrule
+3 & Pressed Spacebar & Character collides with high-altitude pteradactyl during transition and Gameplay ends & pass\\
+\hline
+\end{tabular}
+
+\subsection{Obstacle Collision Test 2 (OCT-02)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{OCT-02} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & none & Character collides with side of cactus &  pass\\
+\midrule
+2 & Space bar pressed till pteradactyl encountered then no input & Character collides with low-altitude pteradactyl & pass\\
+ \hline
+\end{tabular}
+
+\subsection{Points Test 1 (PT-01)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{PT-01} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & none & Points increment automatically &  pass\\
+\midrule
+2 & none & Points start from 0; Points increment automatically &  pass\\
+ \hline
+\end{tabular}
+
+\subsection{Points Test 2 (PT-02)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{PT-02} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Space bar (Game played as intended) & Points: 58  Highscore: 58 &  pass\\
+\midrule
+2 & 'Play Again' clicked with mouse; Space bar pressed (Game played for shorter time than Trial 1) & Points: 16 Highscore: 58 & pass\\
+\midrule
+3 & 'Play Again' clicked with mouse; Space bar pressed (Game played for longer time than Trial 1) & Points: 80 Highscore: 80 & pass\\
+ \hline
+\end{tabular}
+
+\subsection{Points Test 3 (PT-03)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{PT-03} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Space bar (Game played as intended) & Points: 58  Highscore: 58 &  ok\\
+\midrule
+2 & 'Main Menu' clicked with mouse; Space bar pressed (Game played as intended) & Highscore reset to 0 during Gameplay; Points: 16  Highscore: 16 & pass\\
+\midrule
+3 & 'Main Menu' clicked with mouse; Space bar pressed (Game played as intended) & Highscore reset to 0 during Gameplay; Points: 80 Highscore: 80 & pass\\
+ \hline
+\end{tabular}
+
+\subsection{Combination Selection Test 1 (CST-01)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{CST-01} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & grey character; grey landscape; PLAY & grey character; grey landscape &  pass\\
+\midrule
+2 & grey character; red landscape; PLAY & grey character; red landscape &  pass\\
+\midrule
+3 & grey character; blue landscape; PLAY & grey character; blue landscape &  pass\\
+\midrule
+4 & red character; grey landscape; PLAY & red character; grey landscape &  pass\\
+\midrule
+5 & red character; red landscape; PLAY & red character; red landscape &  pass\\
+\midrule
+6 & red character; blue landscape; PLAY & red character; red landscape &  pass\\
+\midrule
+7 & blue character; grey landscape; PLAY & blue character; grey landscape &  pass\\
+\midrule
+8 & blue character; red landscape; PLAY & blue character; red landscape &  pass\\
+\midrule
+9 & blue character; blue landscape; PLAY & blue character; blue landscape &  pass\\
+ \hline
+\end{tabular}
+
+\subsection{Combination Selection Test 2 (CST-02)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{CST-02} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & PLAY & grey character; grey landscape &  pass\\
+ \hline
+\end{tabular}
+
+\section{Nonfunctional Requirements Evaluation}
+For each Non-functional requirements test deemed most important, simple survey questions were given to ten random people in Thode Library, McMaster University as described in Test Plan and the class presentation. To protect the anonymity of the test subjects, a number was assigned to correspond to their rank response for each test. The test subjects were instructed to play the game as intended by an average user for this project.
+
+\subsection{Usability}
+\subsubsection{Usability Test (UT-01)}
+\begin{tabular}{ |p{5cm}|p{5cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{UT-01} \\
+ \hline
+Person & Rank\\
+ \hline
+1 & 5\\
+2 & 5\\
+3 & 4\\
+4 & 5\\
+5 & 4\\
+6 & 5\\
+7 & 5\\
+8 & 4\\
+9 & 5\\
+10 & 5\\
+\textbf{average} & \textbf{4.7}\\
+ \hline
+\end{tabular}
+		
+\subsection{Performance}
+\subsubsection{Performance Test (PFT-01)}
+\begin{tabular}{ |p{5cm}|p{5cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{PFT-01} \\
+ \hline
+Person & Rank\\
+ \hline
+1 & 4\\
+2 & 3\\
+3 & 4\\
+4 & 4\\
+5 & 4\\
+6 & 3\\
+7 & 5\\
+8 & 4\\
+9 & 5\\
+10 & 3\\
+\textbf{average} & \textbf{3.9}\\
+ \hline
+\end{tabular}
+
+\subsection{Learnability}
+\subsubsection{Learnability Test (LT-01)}
+\begin{tabular}{ |p{5cm}|p{5cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{LT-01} \\
+ \hline
+Person & Rank\\
+ \hline
+1 & 5\\
+2 & 5\\
+3 & 5\\
+4 & 5\\
+5 & 5\\
+6 & 4\\
+7 & 5\\
+8 & 5\\
+9 & 4\\
+10 & 5\\
+\textbf{average} & \textbf{4.8}\\
+ \hline
+\end{tabular}
+
+\subsection{Look and Feel}
+\subsubsection{Look and Feel Test (LFT-01)}
+\begin{tabular}{ |p{5cm}|p{5cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{OCT-02} \\
+ \hline
+Person & Rank\\
+ \hline
+1 & 4\\
+2 & 4\\
+3 & 4\\
+4 & 5\\
+5 & 4\\
+6 & 5\\
+7 & 3\\
+8 & 4\\
+9 & 4\\
+10 & 5\\
+\textbf{average} & \textbf{4.4}\\
+ \hline
+\end{tabular}	
+\section{Comparison to Existing Implementation}	
+According to test results, DinoDodger compares well within the functional requirement constraints set by the original T-rex runner project. The additional features such as the UI and extra character and landscape selections make the game unique and more enjoyable to play, as reflected in the non-functional requirement test survey results. Visit Test Plan for more details.
+
+\section{Unit Testing}
+Note: Manual testing was used. Since the implementation of the obstacle speeds are intervals, decreasing the intervals would result in the animation taking place in less time, hence virtually faster. The speeds of the Cacti and Pteradactyl were printed to the console and compared to their initial interval values of 2000ms and 1800ms respectively. Each trial is simply an updated print statement during Gameplay.
+\subsection{Difficulty Test 1 (DT-01)}
+\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+ \hline
+ \multicolumn{4}{|c|}{DT-01} \\
+ \hline
+Trial & Input & Output & Result\\
+ \hline
+1 & Spacebar (Game played as intended) & Cactus Interval: 1995<2000; Pteradactyl interval: 1795<1800 &  pass\\
+\midrule
+2 & Gameplay continued from Trial 1 & Cactus Interval: 1990<1995; Pteradactyl interval: 1790<1795 & pass\\
+ \hline
+\end{tabular}
+
+\section{Changes Due to Testing}
+Introduction of new modules: Pteradactyl, Cactus, PointCounter previously planned to be implemented within PlayScene module itself. Character.jump() and Pteradactyl.getRandomHeight() were no longer used.
+
+\section{Automated Testing}
+none
+		
+\section{Trace to Requirements}
+see Test Plan
+		
+\section{Trace to Modules}
+see Test Plan		
+
+\section{Code Coverage Metrics}
+\subsection{Function coverage}
+In all modules, all routines were called except for jump() in Character and getRandomHeight() in Pteradactyl. This is because implementation of the animation of these objects either did not require these to work or were faulty. In the case of Character.jump(), which performed the jump transition of the character during Gameplay, every time Gameplay mode was re-entered during single execution of the game, it appeared a new thread instance of the method was created and repeated itself the number of times the Gameplay was restarted. This bug was temporarily fixed by hard-coding the transition within the PlayScene module.
+\subsection{Statement coverage}
+All statements within the modules in this project were executed as evident in the test cases showing functional requirements were met.
+\subsection{Condition coverage}
+All boolean conditions were met in the modules containing them. UI, DinoDodger, Cactus, and PlayScene all executed if statements that concerned character and landscape selection, releasing random obstacles at intervals, and testing for collisions between the character and obstacles.
+\subsection{Branch coverage}
+The most important branches concerned keycode Spacebar inputs and the reaction of the program, the character and landscape selection branches in UI and DinoDodger, and cacti selection in Cactus. All these branches were used throughout program execution.
+
+\bibliographystyle{plainnat}
+
+\bibliography{SRS}
+
+\end{document}

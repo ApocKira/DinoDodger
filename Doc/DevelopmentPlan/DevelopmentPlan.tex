@@ -1,0 +1,122 @@
+ \documentclass{article}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage[usernames, dvipsnames]{color}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,      
+    urlcolor=cyan,
+}
+
+\title{SE 3XA3: Development Plan\\ DinoDodger}
+
+\author{Team 39, S.R.A Squad
+		\\ Shrey Mittal, mittas1
+		\\ Razan Abujarad, abujarar
+		\\ Zhiwen Yang, yangz18
+}
+
+\date{September 29, 2017}
+
+%\input{../Comments}
+
+\begin{document}
+
+\begin{table}[hp]
+\caption{Revision History} \label{TblRevisionHistory}
+\begin{tabularx}{\textwidth}{llX}
+\toprule
+\textbf{Date} & \textbf{Developer(s)} & \textbf{Change}\\
+\midrule
+ Sept 28th & Razan, Shrey, Zhiwen & Creation of Development Plan\\
+ Dec 4th & Razan Abujarad & Revision of document\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\maketitle
+
+\section{Team Meeting Plan}
+The team will be meeting weekly on Tuesdays from 2:30pm to 4:30pm at Thode Library.
+\newline
+Shrey Mittal will be taking the role of Leader.
+\newline
+Zhiwen Yang will be taking the role of Scribe.
+\newline
+Razan Abujarad will be taking the role of Chair.
+\newline
+
+\section{Team Communication Plan}
+Communication between team members will take place in person as well as over Facebook messages and text messages.
+Contact information such as phone numbers and Facebook names have been exchanged between the team members.
+
+\section{Team Member Roles}
+In addition to the member roles stated above, the team members will also be taking on responsibilities based on their expertise. 
+\newline
+Shrey Mittal will be the technology expert.
+\newline
+Zhiwen Yang will be the animation expert.
+\newline
+Razan Abujarad will be the expert on Latex.
+
+\section{Git Workflow Plan}
+\subsection{Centralized}
+The original project is called T-rex Runner, and it is saved in master repository in Git project. Every features added is modified in the feature-branch.
+\subsection{Feature-Branch}
+\sout{Zhiwen Yang will work on Animation module branch
+Razan Abujarad will work on the user interface branch.
+Shrey Mittal will work on the main module for DinoDodger branch.}
+\subsection{labels}
+Labels is used to tell other team members whether their own work on their branch is done or not. 
+\newline
+Each members have their own labels and it will be used after they have finished their work.
+Zhiwen Yang: ZY
+Razan Abujarad: RA
+Shrey Mittal: SM
+\subsection{Milestones}
+\sout{Milestones is used to tell TA and professor where the process of the project reaches. It gives a sign for team members, TAs and professor to know what work is done. It will be written after every part of work is done.} \textcolor{red}{Milestones are intended to organize and track development of the project throughout the intended duration. Each documentation milestone will be an additional feature in the framework used by this team to complete the implementation of the product. Milestones allow the project to progress and are open to review and revision in case of new ideas that may arise.}
+
+\section{Proof of Concept Demonstration Plan}
+\subsection{Architecture details and USE relations between modules}
+The basic architecture used in the software development will comprise of the Dino Dodger module which contains the functionality of the game as well as modules for the game interface which will be created using JavaFx \sout{or HTML/CSS.
+The DinoDodger module will use the interface modules. The program must use a web browser to display the game.}
+All code modules will be commented and documentation of the comments  will be generated into documents using Doxygen.
+\subsection{Use of Third Party Tools} 
+Third Party tools to be used for the implementation of this project may include a IDE such as eclipse or a text editor such a Xcode \sout{ as well as web browsers such as Chrome to test the functionality of the game}. 
+
+\subsection{Security Concerns}
+There will be minimal security concerns since the game development will not require any user information. To use the game, the user does not require any username or password to login in \sout{to the web browser but simply use the web browser without an internet connection}.
+
+\section{Technology}
+The programming language to be used to develop this game is Java. JavaFx will also be used to develop the user interface. 
+\\
+The IDE to be used will be Eclipse \sout{or Netbeans}.
+\\
+Documentation will be generated using Latex in addition to comment documentation which will be generated using Doxygen. 
+\\
+\sout{JUnit will be the main testing framework used to test the program. JUnit test cases can be created in the IDE. }
+
+\section{Coding Style}
+This project will be implemented in Java, thus some Java coding conventions will be followed:
+\begin{itemize}
+\item Constants will follow uppercase naming conventions and each declaration of a primitive data type will be on a single line to allow for single line descriptive comments.
+\item Curly braces will be used within if-statements and loop statements as omitting them is possible but undesired. 
+\item Block style comments with @brief and @param tags will be used to describe methods and classes. 
+\item Code will be written in the simplest way possible to minimize the number of lines; whitespace will only be used to organize code in a legible manner.
+\end{itemize}
+
+\section{Project Schedule}
+
+A Gantt Chart subject to change has been prepared to allocate time for different tasks for the duration of the project. \href{Gantt_Project_DinoDodger_v1.gan}{Click Here} for a link to the Gantt File.
+
+\section{Project Review}
+\textcolor{red}{Reflecting on the completed project and comparing it to the original T-rex runner, DinoDodger was mostly developed as intended by this document. Some areas where the outcome did not fulfill plans intended here included the usage of git branching, as not all members of S.R.A Squad were comfortable using branches. To overcome this issue, library meetings were held more frequently than intended to interact and discuss documentation and the software development of the project. The allocation of member roles were not followed as the rigidity was difficult when developing the project. During team meetings, the collaboration of ideas and flexibility of roles helped the development of the project happen more smoothly. Overall the development plan was a useful tool in organizing the team's effort towards building the software product, because the initial planning, intended to be flexible was nonetheless able to create a foundational framework for how the team would interact and learn during the course of this project.}
+
+\end{document}

@@ -1,0 +1,910 @@
+
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{fullpage}
+\usepackage[round]{natbib}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=blue
+}
+\usepackage[round]{natbib}
+
+\newcounter{acnum}
+\newcommand{\actheacnum}{AC\theacnum}
+\newcommand{\acref}[1]{AC\ref{#1}}
+
+\newcounter{ucnum}
+\newcommand{\uctheucnum}{UC\theucnum}
+\newcommand{\uref}[1]{UC\ref{#1}}
+
+\newcounter{mnum}
+\newcommand{\mthemnum}{M\themnum}
+\newcommand{\mref}[1]{M\ref{#1}}
+
+\title{SE 3XA3: MIS \\DinoDodger}
+
+\author{Team 39, S.R.A Squad
+		\\ Shrey Mittal, mittas1
+		\\ Razan Abujarad, abujarar
+		\\ Allen Yang, yangz18
+}
+
+\date{9 November, 2017}
+
+\begin{document}
+
+\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+\begin{table}[bp]
+\caption{\bf Revision History}
+\begin{tabularx}{\textwidth}{p{3cm}p{2cm}X}
+\toprule {\bf Date} & {\bf Version} & {\bf Notes}\\
+\midrule
+\date{2017/11/9} & 1.0 & Creating MIS\\
+\date{2017/12/04} &  2.0 & MIS Revision \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\newpage
+\section {UI Module}
+\subsection{Module}
+User Interface
+\subsection {Uses}
+N/A
+\subsection {Syntax}
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+start & Stage & Scene & none\\
+\hline
+playButtonSelected & Event & none & none\\
+\hline
+char1Selected & Event & none & none\\
+\hline
+char2Selected & Event & none & none\\
+\hline
+char3Selected & Event & none & none\\
+\hline
+landscape1Selected & Event & none & none\\
+\hline
+landscape2Selected & Event & none & none\\
+\hline
+landscape3Selected & Event & none & none\\
+\hline
+main & none & none & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+button1 := Button\\
+button2 := Button\\
+button3 := Button\\
+button4 := Button\\
+button5 := Button\\
+button6 := Button\\
+button7 := Button\\
+char1 := String\\
+char2 := String\\
+char3 := String\\
+char := String\\
+landscape := String\\
+landscape1 := String\\
+landscape2 := String\\
+landscape3 := String\\
+scene1 := Scene\\
+scene2 := Scene\\
+scene3 := Scene\\
+\subsubsection {State Invariant}
+none
+\subsubsection {Access Routine Semantics}
+start(Stage):
+\begin{itemize}
+\item transition: Creation of stage(window) with scene
+\item exception: none
+\end{itemize}
+char1Selected:
+\begin{itemize}
+\item transition: char = char1
+\item exception: none
+\end{itemize}
+char1Selected:
+\begin{itemize}
+\item transition: char = char2
+\item exception: none
+\end{itemize}
+char3Selected:
+\begin{itemize}
+\item transition: char = char3
+\item exception: none
+\end{itemize}
+landscape1Selected:
+\begin{itemize}
+\item transition: landscape = landscape1
+\item exception: none
+\end{itemize}
+landscape2Selected:
+\begin{itemize}
+\item transition: landscape = landscape2
+\item exception: none
+\end{itemize}
+landscape3Selected:
+\begin{itemize}
+\item transition: landscape = landscape3
+\item exception: none
+\end{itemize}
+okayButtonSelected:
+\begin{itemize}
+\item transition: Goes from scene1 to scene2
+\item exception: none
+\end{itemize}
+
+
+
+\newpage
+\section {Sprite Animation Module}
+\subsection{Template Module}
+Sprite Animation
+\subsection {Uses}
+N/A
+\subsection {Syntax}
+\subsubsection {Exported Constants}
+imageView: ImageView\\
+COUNT: int\\
+COLUMNS: int\\
+OFFSET\_X: int\\
+OFFSET\_Y: int\\
+WIDTH: int\\
+HEIGHT: int\\
+\subsubsection {Exported Types}
+SpriteAnimation 
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+SpriteAnimation & ImageView, Duration, int, int, int, int, int, int & SpriteAnimation & none\\
+\hline
+setOffSetX & int & none & none\\
+\hline
+setOffSetY & int & none & none\\
+\hline
+interpolate & double & none & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+imageView: ImageView\\
+duration: Duration\\
+count: int\\
+columns: int\\
+offSetX: int\\
+offSetY: int\\
+width: inti\\
+height: int\\
+
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+SpriteAnimation(imageView, duration, count, columns, offSetX, offSetY, width, height):
+\begin{itemize}
+\item transition: imageView, setCycleDuration(duration), COUNT, COLUMNS, OFFSET\_X, OFFSET\_Y, WIDTH, HEIGHT  := imageView, duration, count, columns, offSetX, offSetY, width, height
+\item output: $out := \mathit{self}$
+\item exception: none
+\end{itemize}
+\noindent setOffSetX($x$):
+\begin{itemize}
+\item transition: OFFSET\_X := x
+\item output: none
+\item exception: none
+\end{itemize}
+\noindent setOffSetY($y$):
+\begin{itemize}
+\item transition: OFFSET\_Y := y
+\item output: none
+\item exception: none
+\end{itemize}
+\noindent interpolate($frac$):
+\begin{itemize}
+\item transition: imageView is set to new viewport using a Rectangle2D object wifth values x, y, width, height, where x and y are as follows: \\ \\
+index := min(floor(COUNT*frac, COUNT-1)) \\ 
+x := (index mod(COLUMNS))*WIDTH+OFFSET\_X \\
+y := (index/COLUMNS)*HEIGHT+OFFSET\_Y \\
+\item output: none
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {Character Module}
+\subsection{Template Module}
+PointT
+\subsection {Uses}
+SpriteAnimation
+\subsection {Syntax}
+\subsubsection{Exported Constants}
+imageView: ImageView\\
+COUNT: int\\
+COLUMNS: int\\
+OFFSET\_X: int\\
+OFFSET\_Y: int\\
+WIDTH: int\\
+HEIGHT: int\\
+\subsubsection {Exported Types}
+Character
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+Character & ImageView & Character & none\\
+\hline
+jump & none & Character Animated to Jump & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$animation$ := SpriteAnimation
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+Character($imageView$):
+\begin{itemize}
+\item transition: $imageView := imageView$ 
+\item output: Outputs Animation onto an imageView
+\item exception: none
+\end{itemize}
+\noindent jump:
+\begin{itemize}
+\item transition: none
+\item output: Character jumps
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {Animation Module}
+\subsection{Template Module}
+Animation
+\subsection {Uses}
+Character, DinoDodger
+\subsection {Syntax}
+\subsubsection {Exported Types}
+Animation
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+start & Stage & Window & none\\
+\hline
+main & none & all arguments launched & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$goAnimation$ := SpriteAnimation\\
+$goUp$ := SpriteAnimation\\
+$imageView1$ := ImageView\\
+$imageView2$ := ImageView\\
+$imageView3$ := ImageView\\
+$animation$ := SpriteAnimation\\
+\subsubsection {State Invariant}
+While character has not intersected obstacle, continue.
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+start($imageView$):
+\begin{itemize}
+\item transition: $imageView := imageView$ 
+\item output: Outputs Character Animation, Obstacles and Background onto Scene
+\item exception: none
+\end{itemize}
+\noindent main:
+\begin{itemize}
+\item transition: All arguments launched
+\item output: Gameplay mode
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {DinoDodger Module}
+\subsection{Template Module}
+DinoDodger
+\subsection {Uses}
+User Interface Module
+\subsection {Syntax}
+\subsubsection {Exported Types}
+none; this module is medium of communication
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+getCharacterSelected & String & Image & none\\
+\hline
+getLandScapeSelected & String &Image & none\\
+\hline
+getScore& none & int & none\\
+\hline
+getHighScore & none & int & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$POINTS$ := int\\
+$HIGHSCORE$ := int\\
+$landScape\_1$ := Image\\
+$landScape\_2$ := Image\\
+$landScape\_3$ := Image\\
+$character\_1$ := Image\\
+$character\_2$ := Image\\
+$character\_3$ := Image\\
+\subsubsection{State Invariant}
+none
+\subsubsection{Assumptions}
+none
+\subsubsection{Access Routine Semantics}
+getCharacterSelected(character)
+\begin{itemize}
+\item transition: returns Image based on String equivalence
+\item output:  character\_1, character\_2, character\_3  based on equivalence of character
+\item exception: none
+\end{itemize}
+\noindent getLandScapeSelected(landScape)
+\begin{itemize}
+\item transition: returns Image based on String equivalence
+\item output: landScape\_1, landScape\_2, landScape\_3  based on equivalence of character
+\item exception: none
+\end{itemize}
+\noindent getScore:
+\begin{itemize}
+\item transition: HIGHSCORE = POINTS
+\item output: POINTS
+\item exception: POINTS < HIGHSCORE in which case transition does not occur.
+\end{itemize}
+\noindent getHighScore:
+\begin{itemize}
+\item transition: none
+\item output: HIGHSCORE
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {UI Module}
+\subsection{Module}
+User Interface
+\subsection {Uses}
+N/A
+\subsection {Syntax}
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+start & Stage & Scene & none\\
+\hline
+playButtonSelected & Event & none & none\\
+\hline
+char1Selected & Event & none & none\\
+\hline
+char2Selected & Event & none & none\\
+\hline
+char3Selected & Event & none & none\\
+\hline
+landscape1Selected & Event & none & none\\
+\hline
+landscape2Selected & Event & none & none\\
+\hline
+landscape3Selected & Event & none & none\\
+\hline
+main & none & none & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+button1 := Button\\
+button2 := Button\\
+button3 := Button\\
+button4 := Button\\
+button5 := Button\\
+button6 := Button\\
+button7 := Button\\
+char1 := String\\
+char2 := String\\
+char3 := String\\
+char := String\\
+landscape := String\\
+landscape1 := String\\
+landscape2 := String\\
+landscape3 := String\\
+scene1 := Scene\\
+scene2 := Scene\\
+scene3 := Scene\\
+\subsubsection {State Invariant}
+none
+\subsubsection {Access Routine Semantics}
+start(Stage):
+\begin{itemize}
+\item transition: Creation of stage(window) with scene
+\item exception: none
+\end{itemize}
+char1Selected:
+\begin{itemize}
+\item transition: char = char1
+\item exception: none
+\end{itemize}
+char1Selected:
+\begin{itemize}
+\item transition: char = char2
+\item exception: none
+\end{itemize}
+char3Selected:
+\begin{itemize}
+\item transition: char = char3
+\item exception: none
+\end{itemize}
+landscape1Selected:
+\begin{itemize}
+\item transition: landscape = landscape1
+\item exception: none
+\end{itemize}
+landscape2Selected:
+\begin{itemize}
+\item transition: landscape = landscape2
+\item exception: none
+\end{itemize}
+landscape3Selected:
+\begin{itemize}
+\item transition: landscape = landscape3
+\item exception: none
+\end{itemize}
+okayButtonSelected:
+\begin{itemize}
+\item transition: Goes from scene1 to scene2
+\item exception: none
+\end{itemize}
+
+
+
+\newpage
+\section {Sprite Animation Module}
+\subsection{Template Module}
+Sprite Animation
+\subsection {Uses}
+N/A
+\subsection {Syntax}
+\subsubsection {Exported Constants}
+imageView: ImageView\\
+COUNT: int\\
+COLUMNS: int\\
+OFFSET\_X: int\\
+OFFSET\_Y: int\\
+WIDTH: int\\
+HEIGHT: int\\
+\subsubsection {Exported Types}
+SpriteAnimation 
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+SpriteAnimation & ImageView, Duration, int, int, int, int, int, int & SpriteAnimation & none\\
+\hline
+setOffSetX & int & none & none\\
+\hline
+setOffSetY & int & none & none\\
+\hline
+interpolate & double & none & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+imageView: ImageView\\
+duration: Duration\\
+count: int\\
+columns: int\\
+offSetX: int\\
+offSetY: int\\
+width: inti\\
+height: int\\
+
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+SpriteAnimation(imageView, duration, count, columns, offSetX, offSetY, width, height):
+\begin{itemize}
+\item transition: imageView, setCycleDuration(duration), COUNT, COLUMNS, OFFSET\_X, OFFSET\_Y, WIDTH, HEIGHT  := imageView, duration, count, columns, offSetX, offSetY, width, height
+\item output: $out := \mathit{self}$
+\item exception: none
+\end{itemize}
+\noindent setOffSetX($x$):
+\begin{itemize}
+\item transition: OFFSET\_X := x
+\item output: none
+\item exception: none
+\end{itemize}
+\noindent setOffSetY($y$):
+\begin{itemize}
+\item transition: OFFSET\_Y := y
+\item output: none
+\item exception: none
+\end{itemize}
+\noindent interpolate($frac$):
+\begin{itemize}
+\item transition: imageView is set to new viewport using a Rectangle2D object wifth values x, y, width, height, where x and y are as follows: \\ \\
+index := min(floor(COUNT*frac, COUNT-1)) \\ 
+x := (index mod(COLUMNS))*WIDTH+OFFSET\_X \\
+y := (index/COLUMNS)*HEIGHT+OFFSET\_Y \\
+\item output: none
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {Character Module}
+\subsection{Template Module}
+PointT
+\subsection {Uses}
+SpriteAnimation
+\subsection {Syntax}
+\subsubsection{Exported Constants}
+imageView: ImageView\\
+COUNT: int\\
+COLUMNS: int\\
+OFFSET\_X: int\\
+OFFSET\_Y: int\\
+WIDTH: int\\
+HEIGHT: int\\
+\subsubsection {Exported Types}
+Character
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+Character & ImageView & Character & none\\
+\hline
+jump & none & Character Animated to Jump & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$animation$ := SpriteAnimation
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+Character($imageView$):
+\begin{itemize}
+\item transition: $imageView := imageView$ 
+\item output: Outputs Animation onto an imageView
+\item exception: none
+\end{itemize}
+\noindent jump:
+\begin{itemize}
+\item transition: none
+\item output: Character jumps
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {PlayScene Module}
+\subsection{Template Module}
+PlayScene
+\subsection {Uses}
+Character, DinoDodger
+\subsection {Syntax}
+\subsubsection {Exported Types}
+PlayScene
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+start & Stage & Window & none\\
+\hline
+main & none & all arguments launched & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$goAnimation$ := SpriteAnimation\\
+$goUp$ := SpriteAnimation\\
+$imageView1$ := ImageView\\
+$imageView2$ := ImageView\\
+$imageView3$ := ImageView\\
+$animation$ := SpriteAnimation\\
+\subsubsection {State Invariant}
+While character has not intersected obstacle, continue.
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+start($imageView$):
+\begin{itemize}
+\item transition: $imageView := imageView$ 
+\item output: Outputs Character Animation, Obstacles and Background onto Scene
+\item exception: none
+\end{itemize}
+\noindent main:
+\begin{itemize}
+\item transition: All arguments launched
+\item output: Gameplay mode
+\item exception: none
+\end{itemize}
+
+\newpage
+\section {DinoDodger Module}
+\subsection{Template Module}
+DinoDodger
+\subsection {Uses}
+User Interface Module
+\subsection {Syntax}
+\subsubsection {Exported Types}
+none; this module is medium of communication
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+getCharacterSelected & String & Image & none\\
+\hline
+getLandScapeSelected & String &Image & none\\
+\hline
+getScore& none & int & none\\
+\hline
+getHighScore & none & int & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$POINTS$ := int\\
+$HIGHSCORE$ := int\\
+$landScape\_1$ := Image\\
+$landScape\_2$ := Image\\
+$landScape\_3$ := Image\\
+$character\_1$ := Image\\
+$character\_2$ := Image\\
+$character\_3$ := Image\\
+\subsubsection{State Invariant}
+none
+\subsubsection{Assumptions}
+none
+\subsubsection{Access Routine Semantics}
+getCharacterSelected(character)
+\begin{itemize}
+\item transition: returns Image based on String equivalence
+\item output:  character\_1, character\_2, character\_3  based on equivalence of character
+\item exception: none
+\end{itemize}
+\noindent getLandScapeSelected(landScape)
+\begin{itemize}
+\item transition: returns Image based on String equivalence
+\item output: landScape\_1, landScape\_2, landScape\_3  based on equivalence of character
+\item exception: none
+\end{itemize}
+\noindent getScore:
+\begin{itemize}
+\item transition: HIGHSCORE = POINTS
+\item output: POINTS
+\item exception: POINTS < HIGHSCORE in which case transition does not occur.
+\end{itemize}
+\noindent getHighScore:
+\begin{itemize}
+\item transition: none
+\item output: HIGHSCORE
+\item exception: none
+\end{itemize}
+
+\newpage
+
+\textcolor{red}{
+\section {Cactus Module}
+\subsection{Template Module}
+N/A
+\subsection {Uses}
+UI
+\subsection {Syntax}
+\subsubsection{Exported Constants}
+cactus1 : Image \\
+cactus2 : Image \\
+cactus3 : Image \\
+cactus4 : Image \\
+\subsubsection {Exported Types}
+Cactus
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+Cactus & none & none & none\\
+\hline
+getRandomCactus & none & Cactus ImageView & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+N/A
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+Cactus
+\begin{itemize}
+\item transition: $image := image$ 
+\item output: Outputs cactus onto an image
+\item exception: none
+\end{itemize}
+\noindent getRandomCactus:
+\begin{itemize}
+\item transition: none
+\item output: Cactus object
+\item exception: none }
+\end{itemize}
+
+
+\newpage
+
+\textcolor{red}{
+\section {Pteradactyl Module}
+\subsection{Template Module}
+N/A
+\subsection {Uses}
+SpriteAnimation
+\subsection {Syntax}
+\subsubsection{Exported Constants}
+imageView: ImageView\\
+COUNT: int\\
+COLUMNS: int\\
+OFFSET\_X: int\\
+OFFSET\_Y: int\\
+WIDTH: int\\
+HEIGHT: int\\
+\subsubsection {Exported Types}
+Pteradactyl
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+Pteradactyl & ImageView & Pteradactyl & none\\
+\hline
+getRandomHeight & none & Random int & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+$animation$ := SpriteAnimation
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+Pteradactyl($imageView$):
+\begin{itemize}
+\item transition: $imageView := imageView$ 
+\item output: Outputs Pteradactyl Animation onto an imageView
+\item exception: none
+\end{itemize}
+\noindent getRandomHeight:
+\begin{itemize}
+\item transition: none
+\item output: Random integer
+\item exception: none }
+\end{itemize}
+
+\newpage
+
+\textcolor{red}{
+\section {PointCounter Module}
+\subsection{Template Module}
+N/A 
+\subsection {Uses}
+N/A
+\subsection {Syntax}
+\subsubsection{Exported Constants}
+points : int\\
+highscore : int\\
+timer : Timer \\
+sc : Scanner 
+\subsubsection {Exported Types}
+PointCounter
+\subsubsection {Exported Access Programs}
+\begin{tabular}{| l | l | l | l |}
+\hline
+\textbf{Routine name} & \textbf{In} & \textbf{Out} & \textbf{Exceptions}\\
+\hline
+PointCounter & int, int & PointCounter & none\\
+\hline
+hasCollided & none & none & none\\
+\hline
+showPoints & none & int & none\\
+\hline
+showHighScore & none & int & none\\
+\hline
+updateHighScore & none & none & none\\
+\hline
+reset & none & none & none\\
+\hline
+run & none & none & none\\
+\hline
+\end{tabular}
+\subsection {Semantics}
+\subsubsection {State Variables}
+none
+\subsubsection {State Invariant}
+none
+\subsubsection {Assumptions}
+none
+\subsubsection {Access Routine Semantics}
+PointCounter(int, int):
+\begin{itemize}
+\item transition: $points, highscore := int, int$ 
+\item output: PointCounter
+\item exception: none
+\end{itemize}
+\noindent hasCollided:
+\begin{itemize}
+\item transition: none
+\item output: counter stopped
+\item exception: none
+\end{itemize}
+
+\noindent showPoints:
+\begin{itemize}
+\item transition: none
+\item output: points
+\item exception: none
+\end{itemize}
+
+\noindent showHighScore:
+\begin{itemize}
+\item transition: none
+\item output: highscore
+\item exception: none
+\end{itemize}
+
+\noindent updateHighScore:
+\begin{itemize}
+\item transition: $highscore := points$
+\item output: none
+\item exception: none
+\end{itemize}
+
+\noindent reset:
+\begin{itemize}
+\item transition: $points, highscore := 0, 0$
+\item output: none
+\item exception: none
+\end{itemize}
+
+\noindent run:
+\begin{itemize}
+\item transition: $points := points + 1$
+\item output: none
+\item exception: none }
+\end{itemize} 
+
+
+\end{document}

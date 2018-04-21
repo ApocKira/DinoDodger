@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Group39" company="McMaster" webLink="https://gitlab.cas.mcmaster.ca/mittas1/se3xa3/tree/master/Doc/DevelopmentPlan" view-date="2017-09-17" view-index="0" gantt-divider-location="300" resource-divider-location="269" version="2.8.5" locale="en_US">
+    <description><![CDATA[Gantt Project for DinoDodger]]></description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="187" order="0"/>
+        <field id="1" name="Default role" width="78" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Requirements Specification" color="#8cb6ce" meeting="false" start="2017-10-02" duration="4" complete="100" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="25" name="Implementation" color="#000000" meeting="false" start="2017-10-06" duration="28" complete="100" expand="true">
+            <task id="17" name="PlayScene" color="#8cb6ce" meeting="false" start="2017-10-06" duration="28" complete="100" expand="true"/>
+            <task id="45" name="Cactus" color="#8cb6ce" meeting="false" start="2017-11-06" duration="6" complete="100" expand="true"/>
+            <task id="36" name="Obstacles" color="#8cb6ce" meeting="false" start="2017-11-06" duration="6" complete="100" expand="true"/>
+            <task id="37" name="PointCounter" color="#8cb6ce" meeting="false" start="2017-11-06" duration="6" complete="100" expand="true"/>
+            <task id="40" name="Pteradactyl" color="#8cb6ce" meeting="false" start="2017-11-06" duration="7" complete="100" expand="true"/>
+            <task id="18" name="UI Module" color="#8cb6ce" meeting="false" start="2017-10-06" duration="28" complete="100" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Character Module" color="#8cb6ce" meeting="false" start="2017-10-06" duration="8" complete="100" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="SpriteAnimation Module" color="#8cb6ce" meeting="false" start="2017-10-06" duration="8" complete="100" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="DinoDodger Module" color="#8cb6ce" meeting="false" start="2017-10-06" duration="20" complete="100" expand="true"/>
+        </task>
+        <task id="22" name="PoC" color="#8cb6ce" meeting="false" start="2017-10-18" duration="3" complete="100" expand="true">
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="27" name="Test Plan" color="#8cb6ce" meeting="false" start="2017-10-23" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="73" name="UI Testing" color="#8cb6ce" meeting="false" start="2017-11-13" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="74" name="Points Testing" color="#8cb6ce" meeting="false" start="2017-11-13" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="76" name="Character Animation Testing" color="#8cb6ce" meeting="false" start="2017-11-13" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="77" name="Landscape Testing" color="#8cb6ce" meeting="false" start="2017-11-13" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="78" name="Character Reaction testing" color="#8cb6ce" meeting="false" start="2017-11-13" duration="5" complete="100" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="28" name="Test Report" color="#8cb6ce" meeting="false" start="2017-11-20" duration="2" complete="100" expand="true">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" name="Final Documentation" color="#8cb6ce" meeting="false" start="2017-11-22" duration="10" complete="100" expand="true"/>
+        <task id="30" name="Final Presentation" color="#8cb6ce" meeting="false" start="2017-11-27" duration="5" complete="100" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="3" name="Razan" function="2" contacts="" phone=""/>
+        <resource id="4" name="Allen" function="1" contacts="" phone=""/>
+        <resource id="5" name="Shrey" function="3" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="3" function="2" responsible="true" load="33.3"/>
+        <allocation task-id="30" resource-id="3" function="2" responsible="true" load="33.3"/>
+        <allocation task-id="29" resource-id="3" function="2" responsible="true" load="33.3"/>
+        <allocation task-id="28" resource-id="3" function="2" responsible="true" load="33.3"/>
+        <allocation task-id="27" resource-id="3" function="2" responsible="false" load="33.3"/>
+        <allocation task-id="22" resource-id="3" function="2" responsible="false" load="33.3"/>
+        <allocation task-id="18" resource-id="3" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="3" function="2" responsible="true" load="10.0"/>
+        <allocation task-id="0" resource-id="4" function="1" responsible="true" load="33.3"/>
+        <allocation task-id="30" resource-id="4" function="1" responsible="true" load="33.3"/>
+        <allocation task-id="29" resource-id="4" function="1" responsible="false" load="33.3"/>
+        <allocation task-id="28" resource-id="4" function="1" responsible="false" load="33.3"/>
+        <allocation task-id="27" resource-id="4" function="1" responsible="false" load="33.3"/>
+        <allocation task-id="22" resource-id="4" function="1" responsible="false" load="33.3"/>
+        <allocation task-id="19" resource-id="4" function="1" responsible="false" load="25.0"/>
+        <allocation task-id="21" resource-id="4" function="1" responsible="false" load="25.0"/>
+        <allocation task-id="17" resource-id="4" function="1" responsible="true" load="25.0"/>
+        <allocation task-id="76" resource-id="4" function="1" responsible="false" load="10.0"/>
+        <allocation task-id="77" resource-id="4" function="1" responsible="true" load="10.0"/>
+        <allocation task-id="78" resource-id="4" function="1" responsible="true" load="10.0"/>
+        <allocation task-id="0" resource-id="5" function="3" responsible="true" load="33.3"/>
+        <allocation task-id="30" resource-id="5" function="3" responsible="true" load="33.3"/>
+        <allocation task-id="29" resource-id="5" function="3" responsible="false" load="33.3"/>
+        <allocation task-id="28" resource-id="5" function="3" responsible="false" load="33.3"/>
+        <allocation task-id="27" resource-id="5" function="3" responsible="true" load="33.3"/>
+        <allocation task-id="22" resource-id="5" function="3" responsible="false" load="33.3"/>
+        <allocation task-id="21" resource-id="5" function="3" responsible="true" load="25.0"/>
+        <allocation task-id="20" resource-id="5" function="3" responsible="true" load="25.0"/>
+        <allocation task-id="19" resource-id="5" function="3" responsible="true" load="25.0"/>
+        <allocation task-id="17" resource-id="5" function="3" responsible="false" load="25.0"/>
+        <allocation task-id="36" resource-id="5" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="5" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="5" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="5" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="74" resource-id="5" function="3" responsible="true" load="10.0"/>
+        <allocation task-id="76" resource-id="5" function="3" responsible="true" load="10.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Animation Designer"/>
+        <role id="2" name="UI Developer"/>
+        <role id="3" name="Main Class Developer"/>
+    </roles>
+</project>
